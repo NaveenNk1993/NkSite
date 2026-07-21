@@ -6,24 +6,24 @@
 :root {
     --primary: #00b894;
     --primary-dark: #00a381;
-    --accent: #00cec9;
-    --accent-dark: #00b5b1;
-    --dark: #060e0d;
-    --dark-alt: #0a1513;
-    --dark-card: #0e1e1a;
-    --dark-lighter: #122620;
+    --accent: #00b894;
+    --accent-dark: #009b7d;
+    --dark: #f0faf7;
+    --dark-alt: #e5f5f0;
+    --dark-card: #ffffff;
+    --dark-lighter: #f8fdfb;
     --gray-100: #f8f9fa;
     --gray-200: #e9ecef;
     --gray-300: #dee2e6;
     --gray-400: #ced4da;
-    --gray-500: #adb5bd;
-    --gray-600: #6c757d;
-    --text-light: #b8b8d4;
-    --text-muted: #7c7c9a;
+    --gray-500: #6c757d;
+    --gray-600: #495057;
+    --text-light: #2d3436;
+    --text-muted: #636e72;
     --gradient-primary: linear-gradient(135deg, #00b894, #00cec9);
     --gradient-accent: linear-gradient(135deg, #00cec9, #00b894);
-    --shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-    --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.4);
+    --shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.12);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --radius: 12px;
     --radius-lg: 20px;
@@ -78,7 +78,7 @@ a {
 }
 
 a:hover {
-    color: var(--primary);
+    color: var(--primary-dark);
 }
 
 img {
@@ -162,10 +162,10 @@ img {
 }
 
 #mainNav.scrolled {
-    background: rgba(10, 10, 26, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
     padding: 10px 0;
-    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
 }
 
 #mainNav .navbar-brand {
@@ -177,7 +177,7 @@ img {
 }
 
 #mainNav .nav-link {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(45, 52, 54, 0.8);
     font-weight: 500;
     padding: 8px 20px !important;
     position: relative;
@@ -198,7 +198,7 @@ img {
 
 #mainNav .nav-link:hover,
 #mainNav .nav-link.active {
-    color: white;
+    color: var(--primary);
 }
 
 #mainNav .nav-link:hover::after,
@@ -218,7 +218,7 @@ img {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(6, 14, 13, 0.92), rgba(10, 21, 19, 0.85));
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(240, 250, 247, 0.6));
 }
 
 .hero-particles {
@@ -230,14 +230,14 @@ img {
 .hero-title {
     font-size: 4rem;
     font-weight: 800;
-    color: white;
+    color: #1a1a2e;
     line-height: 1.1;
     margin-bottom: 1.5rem;
 }
 
 .hero-subtitle {
     font-size: 1.2rem;
-    color: var(--text-light);
+    color: #4a4a6a;
     max-width: 600px;
     margin-bottom: 2rem;
 }
@@ -262,7 +262,7 @@ img {
 }
 
 .stat-item p {
-    color: var(--text-muted);
+    color: #636e72;
     font-size: 0.9rem;
     margin-bottom: 0;
 }
@@ -280,7 +280,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(45, 52, 54, 0.6);
     font-size: 0.8rem;
     text-decoration: none;
 }
@@ -288,7 +288,7 @@ img {
 .mouse {
     width: 26px;
     height: 40px;
-    border: 2px solid rgba(255, 255, 255, 0.4);
+    border: 2px solid rgba(45, 52, 54, 0.4);
     border-radius: 13px;
     position: relative;
     margin-bottom: 10px;
@@ -321,10 +321,17 @@ img {
     padding-top: 80px;
 }
 
+.page-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(240, 250, 247, 0.7));
+}
+
 .page-hero-title {
     font-size: 3.5rem;
     font-weight: 800;
-    color: white;
+    color: #1a1a2e;
     margin-bottom: 1rem;
 }
 
@@ -333,15 +340,15 @@ img {
 }
 
 .page-hero .breadcrumb-item a {
-    color: var(--accent);
+    color: var(--primary);
 }
 
 .page-hero .breadcrumb-item.active {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(45, 52, 54, 0.7);
 }
 
 .page-hero .breadcrumb-item + .breadcrumb-item::before {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(45, 52, 54, 0.5);
 }
 
 .min-vh-50 {
@@ -351,13 +358,14 @@ img {
 /* ==================== FEATURE CARDS ==================== */
 .feature-card {
     background: var(--dark-card);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: var(--radius-lg);
     padding: 40px 30px;
     transition: var(--transition);
     height: 100%;
     position: relative;
     overflow: hidden;
+    box-shadow: var(--shadow);
 }
 
 .feature-card::before {
@@ -375,7 +383,7 @@ img {
 .feature-card:hover {
     transform: translateY(-10px);
     border-color: rgba(0, 184, 148, 0.3);
-    box-shadow: 0 20px 50px rgba(0, 184, 148, 0.15);
+    box-shadow: 0 20px 50px rgba(0, 184, 148, 0.12);
 }
 
 .feature-card:hover::before {
@@ -401,13 +409,13 @@ img {
 }
 
 .feature-card h4 {
-    color: white;
+    color: #1a1a2e;
     font-weight: 600;
     margin-bottom: 1rem;
 }
 
 .feature-card p {
-    color: var(--text-muted);
+    color: #636e72;
     margin-bottom: 1.5rem;
 }
 
@@ -418,7 +426,7 @@ img {
 }
 
 .feature-link:hover {
-    color: white;
+    color: var(--primary-dark);
 }
 
 /* ==================== ABOUT SECTION ==================== */
@@ -517,11 +525,12 @@ img {
 /* ==================== TESTIMONIAL CARDS ==================== */
 .testimonial-card {
     background: var(--dark-card);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: var(--radius-lg);
     padding: 35px;
     height: 100%;
     transition: var(--transition);
+    box-shadow: var(--shadow);
 }
 
 .testimonial-card:hover {
@@ -540,7 +549,7 @@ img {
 }
 
 .testimonial-text {
-    color: var(--text-light);
+    color: #4a4a6a;
     font-style: italic;
     margin-bottom: 1.5rem;
     line-height: 1.8;
@@ -561,26 +570,27 @@ img {
 }
 
 .testimonial-author h5 {
-    color: white;
+    color: #1a1a2e;
     font-weight: 600;
     font-size: 1rem;
     margin-bottom: 0;
 }
 
 .testimonial-author span {
-    color: var(--text-muted);
+    color: #636e72;
     font-size: 0.85rem;
 }
 
 /* ==================== MISSION CARDS ==================== */
 .mission-card {
     background: var(--dark-card);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: var(--radius-lg);
     padding: 40px;
     text-align: center;
     height: 100%;
     transition: var(--transition);
+    box-shadow: var(--shadow);
 }
 
 .mission-card:hover {
@@ -602,25 +612,26 @@ img {
 }
 
 .mission-card h3 {
-    color: white;
+    color: #1a1a2e;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
 .mission-card p {
-    color: var(--text-muted);
+    color: #636e72;
     margin-bottom: 0;
 }
 
 /* ==================== VALUE CARDS ==================== */
 .value-card {
     background: var(--dark-card);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: var(--radius-lg);
     padding: 35px 25px;
     text-align: center;
     height: 100%;
     transition: var(--transition);
+    box-shadow: var(--shadow);
 }
 
 .value-card:hover {
@@ -639,13 +650,13 @@ img {
 }
 
 .value-card h5 {
-    color: white;
+    color: #1a1a2e;
     font-weight: 600;
     margin-bottom: 0.75rem;
 }
 
 .value-card p {
-    color: var(--text-muted);
+    color: #636e72;
     font-size: 0.9rem;
     margin-bottom: 0;
 }
@@ -653,17 +664,18 @@ img {
 /* ==================== SERVICE CARDS ==================== */
 .service-card {
     background: var(--dark-card);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: var(--radius-lg);
     padding: 40px 30px;
     height: 100%;
     transition: var(--transition);
     position: relative;
+    box-shadow: var(--shadow);
 }
 
 .service-card.featured {
     border-color: var(--primary);
-    background: linear-gradient(135deg, rgba(0, 184, 148, 0.1), rgba(0, 206, 201, 0.05));
+    background: linear-gradient(135deg, rgba(0, 184, 148, 0.08), rgba(0, 206, 201, 0.04));
 }
 
 .service-card:hover {
@@ -684,13 +696,13 @@ img {
 }
 
 .service-card h5 {
-    color: white;
+    color: #1a1a2e;
     font-weight: 600;
     margin-bottom: 0.75rem;
 }
 
 .service-card p {
-    color: var(--text-muted);
+    color: #636e72;
     margin-bottom: 1.5rem;
 }
 
@@ -701,7 +713,7 @@ img {
 }
 
 .service-list li {
-    color: var(--text-light);
+    color: #4a4a6a;
     font-size: 0.9rem;
     padding: 5px 0;
 }
@@ -713,11 +725,12 @@ img {
 /* ==================== TEAM CARDS ==================== */
 .team-card {
     background: var(--dark-card);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: var(--radius-lg);
     overflow: hidden;
     transition: var(--transition);
     text-align: center;
+    box-shadow: var(--shadow);
 }
 
 .team-card:hover {
@@ -746,7 +759,7 @@ img {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(transparent, rgba(10, 10, 26, 0.9));
+    background: linear-gradient(transparent, rgba(255, 255, 255, 0.95));
     padding: 40px 20px 20px;
     display: flex;
     justify-content: center;
@@ -762,12 +775,12 @@ img {
 .team-social a {
     width: 40px;
     height: 40px;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(0, 184, 148, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--primary);
     transition: var(--transition);
 }
 
@@ -781,7 +794,7 @@ img {
 }
 
 .team-info h5 {
-    color: white;
+    color: #1a1a2e;
     font-weight: 600;
     margin-bottom: 0.25rem;
 }

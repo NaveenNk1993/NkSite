@@ -4,8 +4,8 @@
 
 /* ==================== CSS VARIABLES ==================== */
 :root {
-    --primary: #6c5ce7;
-    --primary-dark: #5a4bd1;
+    --primary: #00b894;
+    --primary-dark: #00a381;
     --accent: #00cec9;
     --accent-dark: #00b5b1;
     --dark: #0a0a1a;
@@ -20,8 +20,8 @@
     --gray-600: #6c757d;
     --text-light: #b8b8d4;
     --text-muted: #7c7c9a;
-    --gradient-primary: linear-gradient(135deg, #6c5ce7, #00cec9);
-    --gradient-accent: linear-gradient(135deg, #00cec9, #6c5ce7);
+    --gradient-primary: linear-gradient(135deg, #00b894, #00cec9);
+    --gradient-accent: linear-gradient(135deg, #00cec9, #00b894);
     --shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
     --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.4);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

@@ -8,10 +8,10 @@
     --primary-dark: #00a381;
     --accent: #00cec9;
     --accent-dark: #00b5b1;
-    --dark: #0a0a1a;
-    --dark-alt: #0f0f2a;
-    --dark-card: #151530;
-    --dark-lighter: #1a1a3e;
+    --dark: #060e0d;
+    --dark-alt: #0a1513;
+    --dark-card: #0e1e1a;
+    --dark-lighter: #122620;
     --gray-100: #f8f9fa;
     --gray-200: #e9ecef;
     --gray-300: #dee2e6;
@@ -130,7 +130,7 @@ img {
 
 .btn-accent:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(108, 92, 231, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 184, 148, 0.4);
     color: white;
 }
 
@@ -218,7 +218,7 @@ img {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(10, 10, 26, 0.92), rgba(15, 15, 42, 0.85));
+    background: linear-gradient(135deg, rgba(6, 14, 13, 0.92), rgba(10, 21, 19, 0.85));
 }
 
 .hero-particles {
@@ -374,8 +374,8 @@ img {
 
 .feature-card:hover {
     transform: translateY(-10px);
-    border-color: rgba(108, 92, 231, 0.3);
-    box-shadow: 0 20px 50px rgba(108, 92, 231, 0.15);
+    border-color: rgba(0, 184, 148, 0.3);
+    box-shadow: 0 20px 50px rgba(0, 184, 148, 0.15);
 }
 
 .feature-card:hover::before {
@@ -526,7 +526,7 @@ img {
 
 .testimonial-card:hover {
     transform: translateY(-5px);
-    border-color: rgba(108, 92, 231, 0.3);
+    border-color: rgba(0, 184, 148, 0.3);
 }
 
 .stars {
@@ -625,8 +625,8 @@ img {
 
 .value-card:hover {
     transform: translateY(-8px);
-    border-color: rgba(108, 92, 231, 0.3);
-    box-shadow: 0 15px 40px rgba(108, 92, 231, 0.15);
+    border-color: rgba(0, 184, 148, 0.3);
+    box-shadow: 0 15px 40px rgba(0, 184, 148, 0.15);
 }
 
 .value-icon {
@@ -663,7 +663,7 @@ img {
 
 .service-card.featured {
     border-color: var(--primary);
-    background: linear-gradient(135deg, rgba(108, 92, 231, 0.1), rgba(0, 206, 201, 0.05));
+    background: linear-gradient(135deg, rgba(0, 184, 148, 0.1), rgba(0, 206, 201, 0.05));
 }
 
 .service-card:hover {
@@ -722,7 +722,7 @@ img {
 
 .team-card:hover {
     transform: translateY(-8px);
-    border-color: rgba(108, 92, 231, 0.3);
+    border-color: rgba(0, 184, 148, 0.3);
 }
 
 .team-img-wrapper {
@@ -836,7 +836,7 @@ img {
 .gallery-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(108, 92, 231, 0.9), rgba(0, 206, 201, 0.9));
+    background: linear-gradient(135deg, rgba(0, 184, 148, 0.9), rgba(0, 206, 201, 0.9));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1010,7 +1010,7 @@ img {
 .form-floating .form-control:focus,
 .form-floating .form-select:focus {
     border-color: var(--primary);
-    box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.2);
+    box-shadow: 0 0 0 3px rgba(0, 184, 148, 0.2);
 }
 
 .form-floating .form-control::placeholder {
@@ -1047,7 +1047,7 @@ img {
 }
 
 .contact-info-card:hover {
-    border-color: rgba(108, 92, 231, 0.3);
+    border-color: rgba(0, 184, 148, 0.3);
     transform: translateX(5px);
 }
 
@@ -1098,7 +1098,7 @@ img {
     position: absolute;
     inset: 0;
     background-image:
-        radial-gradient(circle at 20% 50%, rgba(108, 92, 231, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 20% 50%, rgba(0, 184, 148, 0.1) 0%, transparent 50%),
         radial-gradient(circle at 80% 50%, rgba(0, 206, 201, 0.1) 0%, transparent 50%);
 }
 
@@ -1244,7 +1244,7 @@ img {
     visibility: hidden;
     transition: var(--transition);
     z-index: 999;
-    box-shadow: 0 5px 20px rgba(108, 92, 231, 0.4);
+    box-shadow: 0 5px 20px rgba(0, 184, 148, 0.4);
 }
 
 .back-to-top.visible {
@@ -1549,7 +1549,7 @@ img {
 .loader-spinner {
     width: 50px;
     height: 50px;
-    border: 3px solid rgba(108, 92, 231, 0.2);
+    border: 3px solid rgba(0, 184, 148, 0.2);
     border-top-color: var(--primary);
     border-radius: 50%;
     animation: spin 0.8s linear infinite;

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our photo gallery showcasing our work, team, and digital projects at NexGen Solutions.">
+    <meta name="keywords" content="photo gallery, portfolio, projects, work samples, NexGen Solutions">
+    <meta name="author" content="NexGen Solutions">
+    <title>NexGen Solutions | Photo Gallery</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-bolt me-2"></i>NexGen
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a href="contact.html" class="btn btn-accent ms-lg-3 mt-3 mt-lg-0">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== PAGE HERO ==================== -->
+    <section class="page-hero">
+        <div class="hero-overlay"></div>
+        <div class="container position-relative z-1">
+            <div class="row min-vh-50 align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="page-hero-title animate__animated animate__fadeInUp">Photo Gallery</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center animate__animated animate__fadeInUp animate__delay-1s">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== GALLERY SECTION ==================== -->
+    <section class="section-padding">
+        <div class="container">
+            <!-- Category Filters -->
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="gallery-filters">
+                        <button class="filter-btn active" data-filter="all">
+                            <i class="fas fa-th me-1"></i> All
+                        </button>
+                        <button class="filter-btn" data-filter="web">
+                            <i class="fas fa-globe me-1"></i> Web Design
+                        </button>
+                        <button class="filter-btn" data-filter="app">
+                            <i class="fas fa-mobile-alt me-1"></i> App Design
+                        </button>
+                        <button class="filter-btn" data-filter="branding">
+                            <i class="fas fa-palette me-1"></i> Branding
+                        </button>
+                        <button class="filter-btn" data-filter="marketing">
+                            <i class="fas fa-bullhorn me-1"></i> Marketing
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="row g-3 gallery-grid" id="galleryGrid">
+                <!-- Image 1 -->
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="web">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Web Design Project" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-overlay-content">
+                                <h5>E-Commerce Platform</h5>
+                                <p>Web Design</p>
+                                <a href="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop" class="gallery-zoom" data-lightbox="gallery">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="app">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop" alt="Mobile App Design" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-overlay-content">
+                                <h5>Fitness App</h5>
+                                <p>App Design</p>
+                                <a href="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&h=800&fit=crop" class="gallery-zoom" data-lightbox="gallery">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="branding">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop" alt="Branding Project" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-overlay-content">
+                                <h5>Brand Identity</h5>
+                                <p>Branding</p>
+                                <a href="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200&h=800&fit=crop" class="gallery-zoom" data-lightbox="gallery">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 4 -->
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="web">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&h=400&fit=crop" alt="Web Development" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-overlay-content">
+                                <h5>Corporate Website</h5>
+                                <p>Web Design</p>
+                                <a href="https://images.unsplash.com/photo-1547658719-da2b51169166?w=1200&h=800&fit=crop" class="gallery-zoom" data-lightbox="gallery">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 5 -->
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="marketing">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=600&h=400&fit=crop" alt="Digital Marketing" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-overlay-content">
+                                <h5>Social Campaign</h5>
+                                <p>Marketing</p>
+                                <a href="https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=1200&h=800&fit=crop" class="gallery-zoom" data-lightbox="gallery">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 6 -->
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="app">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop" alt="Mobile Application" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-overlay-content">
+                                <h5>Banking App</h5>
+                                <p>App Design</p>
+                                <a href="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1200&h=800&fit=crop" class="gallery-zoom" data-lightbox="gallery">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 7 -->
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="branding">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=600&h=400&fit=crop" alt="Logo Design" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-overlay-content">
+                                <h5>Logo Collection</h5>
+                                <p>Branding</p>
+                                <a href="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=1200&h=800&fit=crop" class="gallery-zoom" data-lightbox="gallery">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 8 -->
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="web">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=600&h=400&fit=crop" alt="Dashboard Design" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-overlay-content">
+                                <h5>Analytics Dashboard</h5>
+                                <p>Web Design</p>
+                                <a href="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=1200&h=800&fit=crop" class="gallery-zoom" data-lightbox="gallery">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 9 -->
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="marketing">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=600&h=400&fit=crop" alt="SEO Marketing" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-overlay-content">
+                                <h5>SEO Strategy</h5>
+                                <p>Marketing</p>
+                                <a href="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=1200&h=800&fit=crop" class="gallery-zoom" data-lightbox="gallery">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 10 -->
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="app">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=600&h=400&fit=crop" alt="Social Media App" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-overlay-content">
+                                <h5>Social Platform</h5>
+                                <p>App Design</p>
+                                <a href="https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=1200&h=800&fit=crop" class="gallery-zoom" data-lightbox="gallery">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 11 -->
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="branding">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=600&h=400&fit=crop" alt="Print Design" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-overlay-content">
+                                <h5>Print Materials</h5>
+                                <p>Branding</p>
+                                <a href="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=1200&h=800&fit=crop" class="gallery-zoom" data-lightbox="gallery">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 12 -->
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="web">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&h=400&fit=crop" alt="UI Design" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-overlay-content">
+                                <h5>SaaS Dashboard</h5>
+                                <p>Web Design</p>
+                                <a href="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200&h=800&fit=crop" class="gallery-zoom" data-lightbox="gallery">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== LIGHTBOX MODAL ==================== -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <button class="lightbox-prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-next" id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImage">
+        </div>
+        <div class="lightbox-counter" id="lightboxCounter">1 / 12</div>
+    </div>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <a href="index.html"><i class="fas fa-bolt me-2"></i>NexGen</a>
+                    </div>
+                    <p class="footer-desc">Empowering businesses with innovative digital solutions since 2014. We turn your ideas into reality.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">App Development</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Contact Info</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Silicon Valley, CA 94025</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@nexgensolutions.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="footer-copyright">&copy; 2024 NexGen Solutions. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="footer-copyright">Designed with <i class="fas fa-heart text-danger"></i> by NexGen Team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#hero" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
